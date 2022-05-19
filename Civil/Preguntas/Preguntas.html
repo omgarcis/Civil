@@ -1,0 +1,812 @@
+<html lang="en">
+
+<head>
+	<meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
+	<title> Housing Diagnosis</title>
+	<meta charset="UTF-8">
+	<!--Bootstrap-->
+	<!-- CSS only -->
+	<link href="https://cdn.jsdelivr.net/npm/bootstrap@5.1.3/dist/css/bootstrap.min.css" rel="stylesheet"
+		integrity="sha384-1BmE4kWBq78iYhFldvKuhfTAU6auU8tT94WrHftjDbrCEXSU1oBoqyl2QvZ6jIW3" crossorigin="anonymous">
+	<!-- JavaScript Bundle with Popper -->
+	<script src="https://cdn.jsdelivr.net/npm/bootstrap@5.1.3/dist/js/bootstrap.bundle.min.js"
+		integrity="sha384-ka7Sk0Gln4gmtz2MlQnikT1wXgYsOg+OMhuP+IlRH9sENBO0LRn5q+8nbTov4+1p"
+		crossorigin="anonymous"></script>
+
+	<link href='https://fonts.googleapis.com/css?family=Roboto' rel='stylesheet' type='text/css'>
+	<meta name="viewport"
+		content="width=device-width, user-scalable=no, initial-scale=1.0, maximum-scale=1.0, minimum-scale=1.0">
+	<link rel="stylesheet" href="css/estilos.css">
+	<link rel="preconnect" href="https://fonts.googleapis.com">
+
+
+</head>
+
+<body>
+
+	<!----- header----->
+	<header>
+		<center><br>
+			<h1 class="titulo-preguntas"> Preguntas acerca de suelos </h1></br>
+		</center>
+	</header>
+	<!-- background -->
+	<div class="bg"></div>
+<div class="bg bg2"></div>
+<div class="bg bg3"></div>
+
+</div>
+
+
+	<!----- section----->
+	<section class="box-shadown">
+		<div class="wrap">
+
+			
+	
+			<!-- Pregunta #1 -->
+
+			<form action="preguntas.php" class="formulario"  method="post" enctype="multipart/form-data">
+
+				<div class="text">
+					<h2>Ingrese su numero de cedula </h2>
+					<input type="text" name="cedula1" required>
+				</div>
+
+				<div class="radio">
+					<h2>¿Cuál es su nivel de formacion academica?</h2>
+					<input type="radio" name="formacion"  id="primaria" value="primaria" required>
+					<label for="primaria">Primaria</label>
+					<p>
+
+						<input type="radio" name="formacion"  id="bachillerato" value="bachillerato" required>
+						<label for="bachillerato">Bachillerato</label>
+					<p>
+
+						<input type="radio" name="formacion"  id="tecnico" value="tecnico">
+						<label for="tecnico">Técnico</label>
+					<p>
+
+						<input type="radio" name="formacion"  id="tecnologo" value="tecnologo">
+						<label for="tecnologo">Tecnólogo</label>
+					<p>
+
+						<input type="radio" name="formacion" id="universitario" value="universidad">
+						<label for="universitario">Universitario </label>
+					<p>
+
+						<input type="radio" name="formacion" id="ninguno" value="ninguno">
+						<label for="ninguno">Ninguna</label>
+					<p>
+				</div>
+
+
+				<!-- Pregunta #2 -->
+				<div class="radio">
+					<h2>¿En qué año fue construida su vivienda?</h2>
+					<input type="radio" name="construccion"  id="antes1963" value="antes de 1963" required>
+					<label for="antes1963">Antes de 1963</label>
+					<p>
+
+						<input type="radio" name="construccion" id="entre1963y1984" value="entre 1963 y 1984">
+						<label for="entre1963y1984">Entre 1963 y 1984. </label>
+					<p>
+
+						<input type="radio" name="construccion" id="entre1985y1997" value="entre 1985 y 1997">
+						<label for="entre1985y1997">Entre 1985 y 1997.</label>
+					<p>
+
+						<input type="radio" name="construccion" id="entre1998y2010"value="entre 1998 y 2010" >
+						<label for="entre1998y2010">Entre 1998 y 2010. </label>
+					<p>
+
+						<input type="radio" name="construccion" id="apartir2011" value="apartir de 2011">
+						<label for="apartir2011">A partir del 2011. </label>
+					<p>
+				</div>
+				<!-- Pregunta #3 -->
+
+				<div class="radio">
+					<h2>¿Fue construida por alguna entidad o empresa constructora?</h2>
+					<input type="radio" name="constructora" id="si" value="si" required>
+					<label for="si">SI</label>
+					<p>
+
+						<input type="radio" name="constructora" id="no" value="no">
+						<label for="no">NO</label>
+					<p>
+				</div>
+
+				<div class="text">
+					<h2>Si su respuesta anterior fue si, ingrese el nombre de la constructora por la que fue construida
+						su
+						vivienda:</h2>
+					<input type="text" name="nombreconstructora">
+				</div>
+
+
+				<!--               AL EXTERIOR DE LA VIVIENDA                                          -->
+
+
+				<div class="text">
+					<center>
+						<h1 class="titulo-preguntas">Al exterior de la vivienda </h1>
+						<h4 class="h4-preguntas">Las siguientes preguntas se deberán realizar por fuera de la vivienda
+							para poder observar las
+							características de las preguntas</h4>
+					</center>
+				</div>
+				<!-- SECCION 2 -->
+				<!-- PREGUNTA #2.1 -->
+
+				<div class="radio">
+					<h2>¿Cuál es el área de la vivienda? (Frente x fondo)</h2>
+					<input type="radio" name="area" id="20a30" value="20 a 30" required>
+					<label for="20a30"> 20 a 30 m^2</label>
+					<p>
+
+						<input type="radio" name="area" id="31a40" value="31 a 40">
+						<label for="31a40"> 31 a 40 m^2</label>
+					<p>
+
+
+						<input type="radio" name="area" id="41a60" value="41 a 60">
+						<label for="41a60">41 a 60 m^2.</label>
+					<p>
+
+						<input type="radio" name="area" id="61a70" value="61 a 70">
+						<label for="61a70">61 a 70 m^2 </label>
+					<p>
+
+						<input type="radio" name="area" id="71a80" value="71 a 80">
+						<label for="71a80"> 71 a 80 m^2 </label>
+					<p>
+
+						<input type="radio" name="area" id="81a90" value="81 a 90">
+						<label for="81a90"> 81 a 90 m^2 </label>
+					<p>
+
+						<input type="radio" name="area" id="91mas" value="91 o mas">
+						<label for="91mas"> 91 m^2 o mayor </label>
+					<p>
+				</div>
+
+				<!----------------------------------------Localización. ---------------------------------------->
+
+				<!-- #2.2 Adjuntar foto de la casa -->
+
+				<div class="text">
+					<center>
+						<h1 class="titulo-preguntas">Foto al exterior de la vivienda </h1>
+						<h4 class="h4-preguntas">Esta seccion es para que le tome una foto al exterior de su vivienda ya
+							la adjunte</h4>
+
+						<p>
+
+							<input type="file" name="fotovivienda" id="fotovivienda" required>
+							<label for="fotovivienda">Ingrese la foto de la vivienda</label>
+						<p>
+					</center>
+				</div>
+				<!-- seccion 3 -->
+				<!-- PREGUNTA #3.1 -->
+
+				<div class="radio">
+					<h2> Su vivienda se encuentra en:</h2>
+					<input type="radio" name="ubicacion" id="ladera" value="ladera" required>
+					<label for="ladera"> Ladera </label>
+					<p>
+						<img src="22.jpg">
+					<p>
+						<input type="radio" name="ubicacion" id="valle1" value="valle">
+						<label for="valle1"> Valle </label>
+						<img src="">
+					<p>
+				</div>
+
+				<!-- PREGUNTA #3.2  -->
+
+				<div class="checkbox">
+					<h2> ¿Qué elementos se encuentran cercanos a la vivienda? </h2>
+
+					<input type="checkbox" name="elementos" id="quebrada" value="quebrada">
+					<label for="quebrada"> Quebrada </label>
+					<img src="">
+					<p>
+
+						<input type="checkbox" name="elementos" id="valle2" value="valle">
+						<label for="valle2">Valle </label>
+						<img src="">
+					<p>
+
+						<input type="checkbox" name="elementos" id="montana" value="montana">
+						<label for="montana"> Montaña</label>
+						<img src="">
+					<p>
+				</div>
+
+				<!-- 	SECCION 4   -->
+				<!-- PREGUNTE #4.1 -->
+
+				
+
+				<div class="radio">
+					<h2> ¿Qué uso actualmente predomina en la vivienda? </h2>
+
+					<input type="radio" name="uso" id="residencial" value="residencial" required>
+					<label for="residencial"> Residencial </label>
+					<p>
+
+						<input type="radio" name="uso" id="comercial" value="comercial">
+						<label for="comercial">Comercial </label>
+					<p>
+
+						<input type="radio" name="uso" id="educacion" value="educacion">
+						<label for="educacion"> Educación </label>
+					<p>
+
+						<input type="radio" name="uso" id="oficina" value="oficina">
+						<label for="oficina"> Oficinas </label>
+					<p>
+
+						<input type="radio" name="uso" id="bodegas" value="bodegas">
+						<label for="bodegas"> Bodegas </label>
+					<p>
+
+						<input type="radio" name="uso" id="deportiva" value="deportiva">
+						<label for="deportiva"> Instalación deportiva </label>
+					<p>
+
+						<input type="radio" name="uso" id="salud" value="salud">
+						<label for="salud"> Centro de salud </label>
+					<p>
+
+						<input type="radio" name="uso" id="industrial" value="industrial">
+						<label for="industrial">Industrial </label>
+					<p>
+
+						<input type="radio" name="uso" id="hotelero" value="hotelero">
+						<label for="hotelero">Hotelero </label>
+					<p>
+
+						<input type="radio" name="uso" id="otrosy" value="Otro">
+						<label for="otrosy">Otros (escribalo en el siguiente campo)</label>
+					<p>
+						<input type="text" name="otrouso" id="otrosyy">
+					<p>
+				</div>
+
+				<!-- PREGUNTA #4.2 -->
+
+				<div class="radio">
+					<h2> ¿La vivienda tuvo un uso diferente al actual? </h2>
+
+					<input type="radio" name="usoresp" id="usoviviendasi" value="si" required>
+					<label for="usoviviendasi"> SI </label>
+					<p>
+						<input type="radio" name="usoresp" id="usoviviendano" value="no">
+						<label for="usoviviendano">NO </label>
+
+					</p>
+				</div>
+
+				<!-- PREGUNTA #4.2.1 -->
+
+				<div class="radio">
+					<h2> si su respuesta a la pregunta anterior fue si, responda la siguiente pregunta, si no, continue con la encuesta.</h2>
+					<h2> ¿El uso de la vivienda anteriormente era? </h2>
+
+					<input type="radio" name="usoanterior" id="Residencial" value="Residencial">
+					<label for="Residencial"> Residencial </label>
+					<p>
+
+						<input type="radio" name="usoanterior" id="Comercial" value="Comercial">
+						<label for="Comercial">Comercial </label>
+					<p>
+
+						<input type="radio" name="usoanterior" id="Educacion" value="Educacion">
+						<label for="Educacion"> Educación </label>
+					<p>
+
+						<input type="radio" name="usoanterior" id="Oficina" value="Oficina">
+						<label for="Oficina"> Oficinas </label>
+					<p>
+
+						<input type="radio" name="usoanterior" id="Bodegas" value="Bodegas">
+						<label for="Bodegas"> Bodegas </label>
+					<p>
+
+						<input type="radio" name="usoanterior" id="Deportivas" value="Instalación deportiva">
+						<label for="Deportivas"> Instalación deportiva </label>
+					<p>
+
+						<input type="radio" name="usoanterior" id="Salud" value="Salud">
+						<label for="Salud"> Centro de salud </label>
+					<p>
+
+						<input type="radio" name="usoanterior" id="Industrial" value="Industrial">
+						<label for="Industrial">Industrial </label>
+					<p>
+
+						<input type="radio" name="usoanterior" id="Hotelero" value="Hotelero">
+						<label for="Hotelero">Hotelero </label>
+					<p>
+
+						<input type="radio" name="usoanterior" id="Otrosz" value="Otro">
+						<label for="Otrosz"> Otros (escribalo en el siguiente campo)</label>
+					<p>
+						<input type="text" name="otrousoanterior" id="Otroszz">
+				</div>
+
+				<!-- PREGUNTA #4.3 -->
+
+
+				<div class="radio">
+					<h2> ¿El uso de la vivienda del primer piso es? </h2>
+
+					<input type="radio" name="usoprimerpiso" id="residencial4.3" value="Residencial" required>
+					<label for="residencial4.3"> Residencial </label>
+					<p>
+
+						<input type="radio" name="usoprimerpiso" id="comercial4.3" value="Comercial">
+						<label for="comercial4.3">Comercial </label>
+					<p>
+
+						<input type="radio" name="usoprimerpiso" id="educacion4.3" value="Educación">
+						<label for="educacion4.3"> Educación </label>
+					<p>
+
+						<input type="radio" name="usoprimerpiso" id="oficina4.3" value="Oficinas">
+						<label for="oficina4.3"> Oficinas </label>
+					<p>
+
+						<input type="radio" name="usoprimerpiso" id="bodegas4.3" value="Bodegas">
+						<label for="bodegas4.3"> Bodegas </label>
+					<p>
+
+						<input type="radio" name="usoprimerpiso" id="deportiva4.3" value="Instalación deportiva">
+						<label for="deportiva4.3"> Instalación deportiva </label>
+					<p>
+
+						<input type="radio" name="usoprimerpiso" id="salud4.3" value="Salud">
+						<label for="salud4.3"> Centro de salud </label>
+					<p>
+
+						<input type="radio" name="usoprimerpiso" id="industrial4.3" value="Industrial">
+						<label for="industrial4.3">Industrial </label>
+					<p>
+
+						<input type="radio" name="usoprimerpiso" id="hotelero4.3" value="Hotelero">
+						<label for="hotelero4.3">Hotelero </label>
+					<p>
+
+						<input type="radio" name="usoprimerpiso" id="otros4.3" value="No aplica">
+						<label for="otros4.3"> No aplica</label>
+					<p>
+				</div>
+
+				<!-- SECCION #5 -->
+				<!-- PREGUNTA #5.1 -->
+				<!-- total de pisos en la vivienda -->
+
+				<div class="radio">
+					<h2> ¿El total de pisos de la vivienda? </h2>
+
+					<input type="radio" name="nro_pisos" id="1" value="1" required>
+					<label for="1"> 1 </label>
+					<p>
+
+						<input type="radio" name="nro_pisos" id="2" value="2">
+						<label for="2">2 </label>
+					<p>
+
+						<input type="radio" name="nro_pisos" id="3" value="3">
+						<label for="3"> 3 </label>
+					<p>
+
+						<input type="radio" name="nro_pisos" id="4" value="4">
+						<label for="4"> 4 </label>
+					<p>
+
+						<input type="radio" name="nro_pisos" id="5" value="5">
+						<label for="5"> 5 </label>
+					<p>
+
+						<input type="radio" name="nro_pisos" id="6" value="6">
+						<label for="6"> 6 </label>
+					<p>
+
+						<input type="radio" name="nro_pisos" id="7 o mayores" value="7 o mas">
+						<label for="7 o mayores"> 7 o mayores</label>
+					<p>
+
+				</div>
+
+				<!-- PREGUNTA #5.2 -->
+
+				<div class="radio">
+					<h2> ¿En que piso se encuentra ubicada la vivienda? </h2>
+
+					<input type="radio" name="elementosP" id=" piso" value="1" required>
+					<label for=" piso"> 1 </label>
+					<p>
+
+						<input type="radio" name="elementosP" id="piso1" value="2">
+						<label for="piso1">2 </label>
+					<p>
+
+						<input type="radio" name="elementosP" id="piso2" value="3">
+						<label for="piso2"> 3 </label>
+					<p>
+
+						<input type="radio" name="elementosP" id="piso3" value="4">
+						<label for="piso3"> 4 </label>
+					<p>
+
+						<input type="radio" name="elementosP" id="piso4" value="5">
+						<label for="piso4"> 5 </label>
+					<p>
+
+						<input type="radio" name="elementosP" id="piso5" value="6">
+						<label for="piso5"> 6 </label>
+					<p>
+
+						<input type="radio" name="elementosP" id="piso6" value="7 o mas">
+						<label for="piso6"> 7 o mayores</label>
+					<p>
+
+				</div>
+
+				<!-- PREGUNTA #5.3 -->
+
+				<div class="radio">
+					<h2> ¿Sotanos o parqueaderos que incluye? </h2>
+
+						<input type="radio" name="elementosSP" id="sotanosn" value="ninguno" required>
+						<label for="sotanosn"> Ninguno </label>
+					<p>
+
+					<input type="radio" name="elementosSP" id="sotanos1 " value="1">
+					<label for="sotanos1 "> 1 </label>
+					<p>
+
+						<input type="radio" name="elementosSP" id="sotanos2" value="2">
+						<label for="sotanos2">2 </label>
+					<p>
+
+						<input type="radio" name="elementosSP" id="sotanos3" value="3">
+						<label for="sotanos3"> 3 </label>
+					<p>
+
+						<input type="radio" name="elementosSP" id="sotanos4" value="4">
+						<label for="sotanos4"> 4 </label>
+					<p>
+
+						<input type="radio" name="elementosSP" id="sotanos5" value="mayores a 5">
+						<label for="sotanos5"> Mayores a 5 </label>
+					<p>
+
+
+				</div>
+
+				<!-- SECCION 6 -->
+				<!-- PREGUNTA #6.1 -->
+
+				<div class="radio">
+					<h2> ¿Comparte muro con los vecinos de al lado? </h2>
+
+					<input type="radio" name="elementosMU" id="murosi " value="si" required>
+					<label for="murosi "> SI </label>
+					<p>
+						<input type="radio" name="elementosMU" id="murono" value="no">
+						<label for="murono">NO </label>
+
+					</p>
+				</div>
+
+				<!-- SECCION #7 -->
+				<!-- PREGUNTA #7.1 -->
+
+				<div class="checkbox">
+					<h2> ¿Hay presencia de equipos grandes dentro de la edificacion? </h2>
+
+					<input type="checkbox" name="elementosEQ" id="Piscina " value="Piscina" required>
+					<label for="Piscina "> Piscina </label>
+					<p>
+
+						<input type="checkbox" name="elementosEQ" id="Canchas" value="Canchas">
+						<label for="Canchas">Canchas </label>
+					<p>
+
+						<input type="checkbox" name="elementosEQ" id="Maquinas de gimnasio" value="Maquinas de gimnasio">
+						<label for="Maquinas de gimnasio"> Maquinas de gimnasio </label>
+					<p>
+
+						<input type="checkbox" name="elementosEQ" id="Tanques de agua" value="Tanques de agua">
+						<label for="Tanques de agua"> Tanques de agua </label>
+					<p>
+
+						<input type="checkbox" name="elementosEQ" id="Maquinaria industrial" value="Maquinaria Industrial">
+						<label for="Maquinaria industrial"> Maquinaria industrial </label>
+					<p>
+
+						<input type="checkbox" name="elementosEQ" id="Almacenamientos" value="Almacenamientos">
+						<label for="Almacenamientos"> Almacenamientos </label>
+					<p>
+
+						<input type="checkbox" name="elementosEQ" id="Ningunow" value="Ninguno">
+						<label for="Ningunow"> Ninguno de los Anteriores </label>
+					<p>
+
+						<input type="radio" name="elementosEQ" id="Otrow" value="Otro">
+						<label for="Otrow"> Otro (escribalo en el siguiente campo) </label>
+					<p>
+						<input type="text" name="otroelementosEQ" id="Otroww">
+					</p>
+				</div>
+
+				<!-- Seccion 8 interior de vivienda -->
+
+				<div class="text">
+					<center>
+						<h1 class="titulo-preguntas">Al interior de la vivienda </h1>
+						<h4 class="h4-preguntas">Las siguientes preguntas se deberán realizar por dentro de la vivienda
+							para poder observar las
+							características de las preguntas</h4>
+					</center>
+				</div>
+
+				<!-- PREGUNTA #8 -->
+
+				<div class="radio">
+					<h2> ¿Altura entre los pisos? </h2>
+
+					<input type="radio" name="elementosAP" id="altura2m " value="2 metros" required>
+					<label for="altura2m "> 2 metros </label>
+					<p>
+						<input type="radio" name="elementosAP" id="altura21m" value="2.1 a 2.5 metros">
+						<label for="altura21m">2.1 a 2.5 metros</label>
+
+					</p>
+					<input type="radio" name="elementosAP" id="altura26m" value="2.6 a 3 metros">
+					<label for="altura26m"> 2.6 a 3 metros </label>
+					<p>
+						<input type="radio" name="elementosAP" id="altura31m" value="3.1 metros o mayores">
+						<label for="altura31m">3.1 metros o mayores </label>
+
+					</p>
+				</div>
+
+				<!-- SECCION #9 -->
+				<!-- PREGUNTA #9.1 -->
+
+				<div class="radio">
+					<h2> ¿Material de contruccion de la vivienda? </h2>
+
+					<input type="radio" name="elementosMCV" id="Mamposteria" value="Mamposteria" required>
+					<label for="Mamposteria"> Mamposteria </label>
+					<p>
+						<input type="radio" name="elementosMCV" id="Concreto" value="Concreto Reforzado">
+						<label for="Concreto">Concreto reforzado</label>
+
+					</p>
+					<input type="radio" name="elementosMCV" id="Prefabricado" value="Prefabricado">
+					<label for="Prefabricado"> Prefabricado </label>
+					<p>
+						<input type="radio" name="elementosMCV" id="Acero" value="Acero">
+						<label for="Acero"> Acero </label>
+
+					</p>
+					<input type="radio" name="elementosMCV" id="Madera" value="Madera">
+					<label for="Madera"> Madera </label>
+					<p>
+						<input type="radio" name="elementosMCV" id="Adobe" value="Adobe">
+						<label for="Adobe"> Adobe </label>
+
+					</p>
+					<input type="radio" name="elementosMCV" id="Tapia" value="Tapia">
+					<label for="Tapia"> Tapia </label>
+					<p>
+						<input type="radio" name="elementosMCV" id="Guadua" value="Guadua">
+						<label for="Guadua">Guadua</label>
+
+					</p>
+					<p>
+						<input type="radio" name="elementosMCV" id="Otrosx" value="Otro">
+						<label for="Otrosx">Otro (escribalo en el siguiente campo)</label>
+					<p>
+						<input type="text" name="otroelementosMCV">
+					<p>
+
+				</div>
+
+				<!-- PREGUNTA #9.2.2 -->
+				<!-- OPCION A MAMPOSTERIA -->
+
+				<div class="radio">
+					<h2> si su respuesta a "Material de construccion" fue Mamposteria, responda la siguiente pregunta, si no, continue con la encuesta.</h2>
+					<h2> Tipo mamposteria </h2>
+
+					<input type="radio" name="elementosTM" id="reforzada" value="reforzada">
+					<label for="reforzada"> Reforzada </label>
+					<p>
+						<input type="radio" name="elementosTM" id="noreforzada" value="noreforzada">
+						<label for="noreforzada">No reforzada</label>
+
+					</p>
+					<input type="radio" name="elementosTM" id="confinada" value="confinada">
+					<label for="confinada"> Confinada </label>
+					<p>
+				</div>
+
+				<!-- OPCION  B  CONCRETO REFORZADO -->
+
+				<div class="radio">
+					<h2> si su respuesta a "Material de construccion" fue Concreto Reforzado, responda la siguiente pregunta, si no, continue con la encuesta.</h2>
+					<h2> Concreto reforzado </h2>
+
+					<input type="radio" name="elementosCR" id="concretomuro" value="Muro Estructural">
+					<label for="concretomuro"> Muro estructural </label>
+					<p>
+						<input type="radio" name="elementosCR" id="Portico1" value="Portico">
+						<label for="Portico1">Portico</label>
+
+					</p>
+					<input type="radio" name="elementosCR" id="concretosistema" value="Sistema dual o combinado">
+					<label for="concretosistema"> Sistema dual o combinado </label>
+					<p>
+						<input type="radio" name="elementosCR" id="Prefabricado1" value="Prefabricado">
+						<label for="Prefabricado1"> Prefabricado </label>
+
+					</p>
+				</div>
+
+				<!-- OPCION  C  Prefabricado -->
+
+				<div class="radio">
+					<h2> si su respuesta a "Material de construccion" fue Prefabricado, responda la siguiente pregunta, si no, continue con la encuesta.</h2>
+					<h2> Prefabricado </h2>
+
+					<input type="radio" name="elementosPRF" id="Yeso1" value="Yeso">
+					<label for="Yeso1"> Yeso </label>
+					<p>
+						<input type="radio" name="elementosPRF" id="Madera1" value="Madera">
+						<label for="Madera1">Madera</label>
+
+					</p>
+					<input type="radio" name="elementosPRF" id="PVC!" value="PVC">
+					<label for="PVC!"> PVC </label>
+					<p>
+						<input type="radio" name="elementosPRF" id="Drywall1" value="Drywall">
+						<label for="Drywall1"> Drywall </label>
+
+					</p>
+					<input type="radio" name="elementosPRF" id="Fribro1" value="Fibrocentimetro">
+					<label for="Fribro1"> Fibrocentimetro </label>
+					<p>
+						<input type="radio" name="elementosPRF" id="Otros2" value="Otro">
+						<label for="Otros2"> Otro </label>
+
+					</p>
+				</div>
+
+				<!-- SECCION #10 -->
+				<!-- PREGUNTA #10 -->
+
+				<div class="radio">
+					<h2> ¿Como se encuentra construido el piso de la vivienda? </h2>
+
+					<input type="radio" name="elementosCPV" id="losaali" value="Losa de concreto aligerado" required>
+					<label for="losaali"> Losa de concreto aligerado </label>
+					<p>
+						<input type="radio" name="elementosCPV" id="losamaci" value="Losa de concreto maciza">
+						<label for="losamaci"> Losa de concreto maciza </label>
+
+					</p>
+					<input type="radio" name="elementosCPV" id="vigasmadera" value="Vigas de madera">
+					<label for="vigasmadera"> Vigas de madera </label>
+					<p>
+						<input type="radio" name="elementosCPV" id="vigasacero" value="Vigas de acero">
+						<label for="vigasacero"> Vigas de acero </label>
+
+					</p>
+
+				</div>
+
+				<!-- SECCION #11 -->
+				<!-- PREGUNTA #11 -->
+
+				<div class="radio">
+					<h2> ¿Material de contruccion del techo la vivienda? </h2>
+
+					<input type="radio" name="elementosMCTV" id="losacocreali" value="Losa de concreto aligerado" required>
+					<label for="losacocreali"> Losa de concreto aligerado </label>
+					<p>
+						<input type="radio" name="elementosMCTV" id="losaconcremaci" value="Losa de concreto maciza">
+						<label for="losaconcremaci"> Losa de concreto maciza </label>
+
+					</p>
+					<input type="radio" name="elementosMCTV" id="Zinc" value="Zinc">
+					<label for="Zinc"> Zinc </label>
+					<p>
+						<input type="radio" name="elementosMCTV" id="plancha1" value="Termina en Plancha">
+						<label for="plancha1"> Termina en plancha </label>
+
+					</p>
+					<input type="radio" name="elementosMCTV" id="placafacil" value="Placa facil">
+					<label for="placafacil"> Placa facil </label>
+					<p>
+						<input type="radio" name="elementosMCTV" id="eter" value="Eternit">
+						<label for="eter"> Eternit </label>
+					<p>
+						<input type="radio" name="elementosMCTV" id="maderatejas" value="Estructura de madera y tejas de barro">
+						<label for="maderatejas">Estructura de madera y tejas de barro </label>
+
+					</p>
+					<input type="radio" name="elementosMCTV" id="Metalicas" value="Metalica">
+					<label for="Metalicas"> Metalica </label>
+					<p>
+
+
+
+				</div>
+
+				<!-- SECCION #12 -->
+				<!-- PREGUNTA #12.1 -->
+
+				<div class="radio">
+					<h2> ¿la edificacion presenta algun asentamiento? </h2>
+
+					<input type="radio" name="elementosEA" id="si1" value="si" required>
+					<label for="si1"> SI </label>
+					<p>
+						<input type="radio" name="elementosEA" id="No2" value="no">
+						<label for="No2">NO </label>
+
+					</p>
+				</div>
+
+				<!-- PREGUNTA #12.2 -->
+
+				<div class="radio">
+					<h2> ¿Se evidencian grietas en los muros y/o columnas? </h2>
+
+					<input type="radio" name="elementosGC" id="Si3" value="si" required>
+					<label for="Si3"> SI </label>
+					<p>
+						<input type="radio" name="elementosGC" id="No3" value="no">
+						<label for="No3">NO </label>
+
+					</p>
+				</div>
+
+				<div>
+
+				</div>
+
+				<div class="btnFin">
+					<input class="btn-final" type="submit" name="Enviar">
+				</div>
+		</div>
+
+		</form>
+
+
+	</section>
+<
+	<!-- empieza el footer -->
+
+	<div class="footer-basic">
+		<div class="footer-clean">
+			<footer>
+				<div class="container">
+					<p class="copyright">Todos los derechos reservados Housing Diagnosis &copy;2022</p>
+				</div>
+		</div>
+		</footer>
+	</div>
+
+
+</body>
+
+</html>

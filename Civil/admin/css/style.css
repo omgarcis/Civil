@@ -1,0 +1,91 @@
+/*Login*/
+body{
+    background-image: url('/admin/img/fondo-formulario.jpg');
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-attachment: fixed;
+}
+a{
+    text-decoration: none;
+}
+.exit{
+    display: flex;
+    justify-content:end;
+    margin-top: 10px;
+    margin-right: 30px;
+}
+.exit svg{
+   color: red;
+}
+.formulario{
+    margin: 0 auto;
+}
+.contenedor{
+    display: flex;
+    justify-content: center;
+}
+.g-col-4{
+    margin-top: 20px;
+}
+.g-col-4:first-child{
+    margin-top: 90px;
+}
+
+.centrar{
+  display: flex;
+  justify-content: center;
+  margin-top: 20px;
+}
+.btn {
+    border: none;
+    width: 100%;
+    background: #80E372;
+    color: #fff;
+    padding: 15px 20px;
+    margin-bottom: 10px;
+    font-size: 20px;
+    text-align:center;
+    text-transform: uppercase;
+    border-radius: 5px;
+    cursor: pointer;
+}
+.btn:hover{
+    background: #52CC41;
+}
+.formulario_seccion{
+    display: flex;
+    font-size: 20px;
+    width: 80%;
+    margin-left: 20px;
+    padding: 3px;
+    border: none;
+    align-items: center;
+}
+
+.formulario{
+    width: 100%;
+    margin-top: 150px;
+    padding: 5px;
+    background: transparent;
+}
+@media(min-width:780px) {
+    .formulario{
+        width: 40%;
+    }
+}
+.formulario_seccion input{
+    text-align: center;
+    border: 1px solid #aaa;
+    width: 100%;
+    margin-left: 10px;
+    padding: 10px;
+}
+
+@media(min-width:720px) {
+    .btn{
+        width: 60%;
+    }
+    .btn .centrar{
+        text-align: center;
+    }
+}
