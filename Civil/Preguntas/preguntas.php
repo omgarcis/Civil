@@ -62,6 +62,8 @@ mysqli_select_db($con,$db_database)or die("problemas al conectar con la base de 
                         }else if($elementosMCV=='Otro'){
                                 $elementosMCV=$_POST['otroelementosMCV'];
                                 $elementostipo='No aplica';
+                        }else{
+                                $elementostipo='No aplica';
                         }
                         $elementosCPV=$_POST['elementosCPV'];
                         $elementosMCTV=$_POST['elementosMCTV'];
