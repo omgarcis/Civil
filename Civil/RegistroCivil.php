@@ -34,7 +34,7 @@ $ejecutar=mysqli_query($con,$sql);
 if(!$ejecutar){
     echo "hubo un error";
 }else{
-    echo"datos guardados<br><a href='Preguntas/Preguntas.html'>IR A LA ENCUESTA</a>";
+    header("Location:Preguntas/Preguntas.html");
 }
 
 ?>

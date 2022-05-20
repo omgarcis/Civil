@@ -327,7 +327,7 @@ mysqli_select_db($con,$db_database)or die("problemas al conectar con la base de 
                         
 
                         if ($res) {
-                                echo"".$punt."<center>ENCUESTA REALIZADA CON EXITO EL PORCENTAJE DE VULNERABILIDAD DE LA VIVIENDA ES DE: ".$porcen."% <p> La vunerabilidad de la vivienda es: ".$color;
+                                echo"<center>ENCUESTA REALIZADA CON EXITO EL PORCENTAJE DE VULNERABILIDAD DE LA VIVIENDA ES DE: ".$porcen."% <p> La vunerabilidad de la vivienda es: ".$color."</center>";
                         } else {
                                 echo"Error";
                         }
