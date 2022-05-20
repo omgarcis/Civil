@@ -70,14 +70,6 @@ mysqli_select_db($con,$db_database)or die("problemas al conectar con la base de 
                         $elementosEA=$_POST['elementosEA'];
                         $elementosGC=$_POST['elementosGC'];
 
-                        $query = "INSERT INTO respuestas (cedula, formacion, construccion, constructora, nombre_constructora, area, foto_vivienda, 
-                        ubicacion, elementos_cercanos, uso, uso_anterior_resp, uso_anterior, uso_primer_piso, nro_pisos, piso_de_vivienda,
-                        nro_sotanos, muro_vecinos, elementos, altura_pisos, material, tipo, piso, techo, asentamiento, grietas) values 
-                                ('$cedula1','$formacion','$construccion','$constructora','$nombrecontructora','$area','" . $binariosImagen . "',
-                                '$ubicacion','$elementos','$uso','$usoresp','$usoanterior','$usoprimerpiso','$nro_pisos','$elementosP',
-                                '$elementosSP','$elementosMU','$elementosEQ','$elementosAP','$elementosMCV','$elementostipo','$elementosCPV','$elementosMCTV','$elementosEA','$elementosGC'); ";
-			$res = mysqli_query($con, $query);
-
                         //porcentaje
                         $punt=0;
                         //1
@@ -324,6 +316,14 @@ mysqli_select_db($con,$db_database)or die("problemas al conectar con la base de 
                         }else if($porcen>80 && $porcen<=100){
                                 $color='Extrema';
                         }
+
+                        $query = "INSERT INTO respuestas (cedula, formacion, construccion, constructora, nombre_constructora, area, foto_vivienda, 
+                        ubicacion, elementos_cercanos, uso, uso_anterior_resp, uso_anterior, uso_primer_piso, nro_pisos, piso_de_vivienda,
+                        nro_sotanos, muro_vecinos, elementos, altura_pisos, material, tipo, piso, techo, asentamiento, grietas, vulnerabilidad) values 
+                                ('$cedula1','$formacion','$construccion','$constructora','$nombrecontructora','$area','" . $binariosImagen . "',
+                                '$ubicacion','$elementos','$uso','$usoresp','$usoanterior','$usoprimerpiso','$nro_pisos','$elementosP',
+                                '$elementosSP','$elementosMU','$elementosEQ','$elementosAP','$elementosMCV','$elementostipo','$elementosCPV','$elementosMCTV','$elementosEA','$elementosGC','$color'); ";
+			$res = mysqli_query($con, $query);
                         
 
                         if ($res) {
